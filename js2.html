@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+  </head>
+  <body>
+    <h1> demo:elseif condition<h1>
+      <script>
+
+      var marks=55;
+      if (marks>75){document.write("your marks is "+marks+"<br>"+" so you got grade-A");}
+      else if (marks>50)  {
+        document.write ("your marks is "+marks+"<br>"+" So you got grade-B");
+  }
+  else if (marks>40)  {
+    document.write("your marks is "+marks+"<br>"+" So you got grade-C");
+}
+else if (marks<40)  {
+  document.write("your marks is "+marks+"<br>"+" So you got fail");
+}
+
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+
+      </script>
+
+  </body>
+</html>
