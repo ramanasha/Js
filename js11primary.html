@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>primary numb or not pramary numb</title>
+
+
+
+  </head>
+  <body>
+<p id="demo"></p>
+
+    <script>
+
+    var number = parseInt(window.prompt("Enter number: ", ""));
+var divisor;
+var check;
+var prime = true;
+var num;
+
+
+divisor = 1;
+
+while (divisor <= number) {
+    check = number % divisor;
+    if (check == 0) {
+
+        if ((divisor != 1) && (divisor != number)) {
+            prime = false;
+        }
+    }
+
+    divisor = divisor + 1;
+}
+
+if (prime == true) {
+    document.write("<br>The number is prime");
+} else {
+    document.write("<br> The number is not prime");
+}
+</script>
+  </body>
+</html>
